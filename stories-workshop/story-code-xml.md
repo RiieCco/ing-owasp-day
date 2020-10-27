@@ -17,8 +17,8 @@ from xml.dom.pulldom import START_ELEMENT, parseString
 import xml
 
 @app.route("/home", methods=['POST', 'GET'])
-def xxe():
-    doc = parseString(request.form['xxe'])
+def upload_xml():
+    doc = parseString(request.form['upload_xml'])
     try:
         for event, node in doc:
             if event == START_ELEMENT and node.localName == "items":
