@@ -27,7 +27,8 @@
 |2.1.8| Verify that a password strength meter is provided to help users set a stronger password.
 |2.1.9|Verify that there are no password composition rules limiting the type of characters permitted. There should be no requirement for upper or lower case or numbers or special characters.
 |2.1.11|Verify that "paste" functionality, browser password helpers, and external password managers are permitted.
-| 5.2.2| Verify that unstructured data is sanitized to enforce safety measures such as allowed  characters and length.
+|5.1.2|Verify that frameworks protect against mass parameter assignment attacks, or that the application has countermeasures to protect against unsafe parameter assignment, such as marking fields private or similar.
 | 5.1.4|Verify that structured data is strongly typed and validated against a defined schema including allowed characters, length and pattern (e.g. credit card numbers or telephone, or validating that two related fields are reasonable, such as checking that suburb and zip/postcode match)
+| 5.2.2| Verify that unstructured data is sanitized to enforce safety measures such as allowed  characters and length.
 |8.3.4|Verify that all sensitive data created and processed by the application has been identified, and ensure that a policy is in place on how to deal with sensitive data.
 |11.1.4 |Verify the application has sufficient anti-automation controls to detect and protect against data exfiltration, excessive business logic requests, excessive file uploads or denial of service attacks.
